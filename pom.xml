@@ -42,6 +42,9 @@
     </dependencies>
   </dependencyManagement>
 
-
+  <modules>
+    <module>core</module>
+    <module>style</module>
+  </modules>
 
 </project>

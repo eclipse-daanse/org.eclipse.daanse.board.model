@@ -19,8 +19,33 @@
   <foreignModel>org.eclipse.daanse.board.model.core.ecore</foreignModel>
   <genPackages prefix="Core" basePackage="org.eclipse.daanse.board.model.core" resource="XML"
       disposableProviderFactory="true" ecorePackage="org.eclipse.daanse.board.model.core.ecore#/">
+    <genDataTypes ecoreDataType="org.eclipse.daanse.board.model.core.ecore#//DynamicString"/>
     <genClasses ecoreClass="org.eclipse.daanse.board.model.core.ecore#//Enviroment">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.daanse.board.model.core.ecore#//Enviroment/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference org.eclipse.daanse.board.model.core.ecore#//Enviroment/dashboards"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference org.eclipse.daanse.board.model.core.ecore#//Enviroment/connections"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="org.eclipse.daanse.board.model.core.ecore#//Connection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.daanse.board.model.core.ecore#//Connection/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="org.eclipse.daanse.board.model.core.ecore#//Widget">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.daanse.board.model.core.ecore#//Widget/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="org.eclipse.daanse.board.model.core.ecore#//Datasource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.daanse.board.model.core.ecore#//Datasource/id"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="org.eclipse.daanse.board.model.core.ecore#//Dashboard">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.daanse.board.model.core.ecore#//Dashboard/id"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference org.eclipse.daanse.board.model.core.ecore#//Dashboard/widgets"/>
+    </genClasses>
+    <genClasses ecoreClass="org.eclipse.daanse.board.model.core.ecore#//ResponsiveDashboard"/>
+    <genClasses ecoreClass="org.eclipse.daanse.board.model.core.ecore#//AbsolutDashboard"/>
+    <genClasses ecoreClass="org.eclipse.daanse.board.model.core.ecore#//Configuration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.daanse.board.model.core.ecore#//Configuration/id"/>
+    </genClasses>
+    <genClasses ecoreClass="org.eclipse.daanse.board.model.core.ecore#//Style">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.daanse.board.model.core.ecore#//Style/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute org.eclipse.daanse.board.model.core.ecore#//Style/name"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>
